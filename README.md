@@ -16,7 +16,7 @@ The variables FN, GN, and MN are derived from lower-level variables sourced from
 ### Prerequisites
 
 - Python installed on your system.
-- Necessary libraries (if any) installed.
+- Necessary libraries installed.
 
 ### Installation
 
