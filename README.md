@@ -2,14 +2,14 @@
 
 ## Overview
 
-The Iowa Food-Energy-Water (IFEW) system is a model designed to calculate the nitrogen surplus (NS) at the county level in Iowa. The nitrogen surplus is composed of several key components:
+The Iowa Food-Energy-Water (IFEW) system is a model designed to calculate the **nitrogen surplus (NS)** at the county level in Iowa. The NS is composed of several key variables:
 
 - **Manure Nitrogen (MN)**
 - **Commercial Nitrogen (CN)**
 - **Grain Nitrogen (GN)**
 - **Fixation Nitrogen (FN)**
 
-The variables FN, GN, and MN are derived from lower-level variables sourced from the [USDA National Agricultural Statistics Service](https://www.nass.usda.gov/). These lower-level variables may contribute to multiple upper-level input variables. The commercial nitrogen (CN) data is obtained from a county-level dataset.
+The variables FN, GN, and MN are derived from lower-level variables sourced from the [USDA National Agricultural Statistics Service](https://www.nass.usda.gov/). These lower-level variables may contribute to multiple upper-level input variables. The CN data is obtained from a county-level dataset.
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ The variables FN, GN, and MN are derived from lower-level variables sourced from
 
 1. **Download the Main Model Script**
 
-   - Obtain the `IFEWs.py` file, which is the core model script responsible for aggregating inputs from lower-level data to compute the nitrogen surplus at the county level.
+   - Obtain the `IFEWs.py` file, which is the core model script responsible for aggregating inputs from lower-level data to compute the NS at the county level.
 
 2. **Prepare the Data**
 
@@ -41,12 +41,11 @@ The variables FN, GN, and MN are derived from lower-level variables sourced from
      ```bash
      python IFEWs.py
      ```
-   - This will process the input data and compute the nitrogen surplus.
 
 2. **Output**
 
    - After running the script, an output file named `IFEWs_output.csv` will be generated.
-   - This file contains the aggregated inputs and the calculated nitrogen surplus for each county.
+   - This file contains the aggregated inputs and the calculated NS for each county along with data on lower-level variables.
 
 ## Visualization
 
@@ -60,7 +59,7 @@ The variables FN, GN, and MN are derived from lower-level variables sourced from
 ### Sankey Diagram
 
 - **Step 1**: Go to [SankeyMATIC](https://sankeymatic.com/build/).
-- **Step 2**: Manually input the flow thickness values based on your data.
+- **Step 2**: Manually input the flow thickness values based on data.
 - **Result**: Create a Sankey diagram to visualize the flow of nitrogen components.
 
 
